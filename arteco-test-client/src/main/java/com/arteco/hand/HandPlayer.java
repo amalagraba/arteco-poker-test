@@ -55,8 +55,7 @@ public class HandPlayer {
 
         if (isStraight) {
             if (isFlush) {
-                if (sorted.get(sorted.size() - 1).getValue() == CardValue.A
-                        && sorted.get(0).getValue() == CardValue.TEN) {
+                if (sorted.get(0).getValue() == CardValue.TEN) {
                     result = new HandResult(HandClassification.ROYAL_FLUSH, sorted);
                 } else {
                     result = new HandResult(HandClassification.STRAIGHT_FLUSH, sorted);
